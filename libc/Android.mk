@@ -291,6 +291,7 @@ libc_common_src_files := \
 ifeq ($(TARGET_ARCH),arm)
 libc_common_src_files += \
 	bionic/bionic_clone.c \
+	arch-arm/bionic/__aeabi_ulcmp.S \
 	arch-arm/bionic/__get_pc.S \
 	arch-arm/bionic/__get_sp.S \
 	arch-arm/bionic/_exit_with_stack_teardown.S \
